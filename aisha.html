@@ -85,7 +85,120 @@ git push -u origin main</pre>
         <li><strong>حماية الفروع:</strong> سياسات للمراجعات وإجراءات الأمان قبل الدمج.</li>
       </ul>
     </section>
+  <title>GitHub — هذا هو الرفع الثاني للتعديل بعد اضافة جديد</title>
+  <!-- Tailwind CDN for quick styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* صغير لتعديل اتجاه النص داخل البطاقات */
+    .card p { direction: rtl; }
+    pre { direction: ltr; text-align: left; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <header class="bg-white shadow">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold">GH</div>
+        <div>
+          <h1 class="text-lg font-semibold">GitHub</h1>
+          <p class="text-sm text-gray-500">منصة استضافة وتعاون للمشاريع البرمجية</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex gap-4 items-center">
+        <a class="text-sm hover:underline" href="#benefits">فوائد</a>
+        <a class="text-sm hover:underline" href="#features">ميزات</a>
+        <a class="text-sm hover:underline" href="#start">ابدأ الآن</a>
+        <a class="btn btn-primary text-white bg-blue-600 px-4 py-2 rounded-md hover:bg-blue-700" href="#">سجّل دخول</a>
+      </nav>
+    </div>
+  </header>
 
+  <main class="max-w-6xl mx-auto px-6 py-10">
+    <!-- Hero -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-4">إدارة، مشاركة وتطوير الكود مع GitHub</h2>
+        <p class="text-lg text-gray-600 mb-6">GitHub هي منصة تعتمد على نظام التحكم بالإصدارات Git وتوفر أدوات للتعاون بين المطورين، إدارة المشاريع، واستضافة الشفرات المصدرية. مناسبة للفرق من صغيرة إلى كبيرة وللمشاريع المفتوحة والمغلقة.</p>
+        <div class="flex gap-3">
+          <a href="#start" class="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg hover:bg-blue-700">ابدأ مجانًا</a>
+          <a href="#features" class="inline-block border border-gray-300 px-5 py-3 rounded-lg">اطّلع على الميزات</a>
+        </div>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow card">
+        <h3 class="font-semibold mb-3">نموذج سريع: إنشاء مستودع ومزامنته</h3>
+        <pre class="p-4 rounded bg-gray-100 overflow-auto"># على جهازك
+git init
+git add .
+git commit -m "النسخة الأولية"
+git remote add origin https://github.com/username/repo.git
+git push -u origin main</pre>
+        <p class="text-sm text-gray-500 mt-2">هذا المثال يشرح كيفية رفع مشروع محلي إلى مستودع GitHub.</p>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits" class="mt-12">
+      <h3 class="text-2xl font-bold mb-4">فوائد استخدام GitHub</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <article class="bg-white p-6 rounded-lg shadow">
+          <h4 class="font-semibold mb-2">التتبع والتحكم بالإصدارات</h4>
+          <p class="text-gray-600">القدرة على الرجوع إلى نسخ سابقة من المشروع، مقارنة التغييرات، وفهم تاريخ التطوير بسهولة.</p>
+        </article>
+        <article class="bg-white p-6 rounded-lg shadow">
+          <h4 class="font-semibold mb-2">التعاون والعمل الجماعي</h4>
+          <p class="text-gray-600">فروع (branches)، طلبات السحب (Pull Requests)، ومراجعات الشفرة تجعل العمل المشترك منظمًا وآمنًا.</p>
+        </article>
+        <article class="bg-white p-6 rounded-lg shadow">
+          <h4 class="font-semibold mb-2">التكامل والأتمتة</h4>
+          <p class="text-gray-600">GitHub Actions يوفّر إمكانيات CI/CD لتشغيل اختبارات، بناء التطبيقات، ونشرها تلقائيًا.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="mt-12">
+      <h3 class="text-2xl font-bold mb-4">ميزات مهمة</h3>
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 list-disc pl-5">
+        <li><strong>مستودعات عامة وخاصة:</strong> خيار للمشاريع المفتوحة أو الاحتفاظ بالكود خاصًا.</li>
+        <li><strong>Issues و Projects:</strong> أدوات لإدارة المهام، تتبع الأخطاء، وتنظيم سير العمل.</li>
+        <li><strong>Actions:</strong> أتمتة سير العمل (اختبارات، بناء، نشر).</li>
+        <li><strong>Pages:</strong> استضافة مواقع ثابتة من مستودعات GitHub بسهولة.</li>
+        <li><strong>Codespaces:</strong> بيئة تطوير سحابية جاهزة للعمل.</li>
+        <li><strong>حماية الفروع:</strong> سياسات للمراجعات وإجراءات الأمان قبل الدمج.</li>
+      </ul>
+    </section>
+
+    <!-- Getting Started -->
+    <section id="start" class="mt-12 bg-gradient-to-r from-white to-gray-50 p-6 rounded-xl">
+      <h3 class="text-2xl font-bold mb-4">ابدأ استخدام GitHub — خطوات سريعة</h3>
+      <ol class="list-decimal pl-5 space-y-2 text-gray-700">
+        <li>سجّل حسابًا على <span class="font-medium">github.com</span>.</li>
+        <li>أنشئ مستودعًا جديدًا (Repository) — اختر اسمًا ووصفًا واضحًا.</li>
+        <li>اربط المستودع بمشروعك المحلي باستخدام git وادفع التغييرات (push).</li>
+        <li>استخدم فروعًا منفصلة للعمل على ميزات جديدة وفتح Pull Requests للمراجعة.</li>
+        <li>قم بإعداد Actions للاختبارات وعمليات النشر التلقائي.</li>
+      </ol>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="mt-10 flex flex-col md:flex-row items-center justify-between gap-6 bg-blue-50 p-6 rounded-lg">
+      <div>
+        <h4 class="text-xl font-bold">هل تريد مساعدة في إنشاء مستودع أو إعداد Actions؟</h4>
+        <p class="text-gray-700">أستطيع توليد ملفات إعداد (مثل .github/workflows) أو كتابة ملف README احترافي بالعربية.</p>
+      </div>
+      <div>
+        <a href="#" class="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg">اطلب الآن</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="mt-12 bg-white border-t">
+    <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-gray-600">© حقوق النشر محفوظة — صفحة تعريفية عن GitHub</p>
+      <div class="text-sm text-gray-500">صُممت بواسطة مولد صفحات الذكاء الاصطناعي • تعليمات الاستخدام: استخدم Git وGitHub بحذر عند رفع بيانات حساسة.</div>
+    </div>
+  
     <!-- Getting Started -->
     <section id="start" class="mt-12 bg-gradient-to-r from-white to-gray-50 p-6 rounded-xl">
       <h3 class="text-2xl font-bold mb-4">ابدأ استخدام GitHub — خطوات سريعة</h3>
